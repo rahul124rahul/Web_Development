@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trying_for_creating_website</title>
+</head>
+
+<body>
+    <header>
+        <h1>Apply Own Technique</h1>
+        <h2>Improvement is very Important</h2>
+    </header>
+
+
+    <main>
+            <!-- Following is the example of relativve link. -->   <!-- This is good one -->
+    <a href="/clone.html" target="main">clone_Wikipedia</a>      <br><br>
+
+
+    <img src="https://th.bing.com/th/id/R.d22bece93393c5ba3402b145c1a338d5?rik=Bu1c3sv9ielK0w&riu=http%3a%2f%2f1.bp.blogspot.com%2f-DT3FkonsqY8%2fU6179nHA6PI%2fAAAAAAAALnA%2fuEcADFSZz5U%2fs1600%2fcute-and-beautiful-girls-wallpapers-058.jpg&ehk=LuVFBOScUePmWqFwS2pm1ulri5XRN%2fxQu3LNQXlIXso%3d&risl=&pid=ImgRaw&r=0" alt="not got re" width="75%">
+
+<br><br>
+<a href="/revision_1.html"><img src="https://wallpapercave.com/wp/wp2004894.jpg" alt="clik here for my work" width="50%"></a>
+
+<a href="https://www.linkedin.com/in/rahul-dadge-221344249/">linkedin</a>
+
+
+
+
+
+
+    </main>
+
+
+    <footer>
+        <pre>
+<address>In front of Shree Siddhi Vinayak Ganesh Temple,
+Ganesh Nagar , Aurad (sha.)-413522.
+</address>
+
+<site>What i should write in the site tag ,
+I am not getting this.
+</site></pre>
+<br>
+<button>EXIT</button>
+    </footer>
+
+
+</body>
+
+</html>
