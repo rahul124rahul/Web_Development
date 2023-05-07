@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEWORK</title>
+</head>
+<body>
+    <header>
+        <h1>PORTFOLIO</h1>
+    </header>
+
+    <main>
+        <section>
+            <img src="/RAHUL_G_D.jpg" width="25%" alt="Img not loading">
+            <br><br>
+
+            <h4>Contact Me:</h4>
+            <a href="https://instagram.com/i_am_s_d_rahul?igshid=YmMyMTA2M2Y=" target="_main"><img width="75px" src="https://th.bing.com/th/id/OIP.yt_8U-wJTrdh9LAa178SywHaHZ?pid=ImgDet&rs=1" alt="Welcome to Instagram"></a>
+
+            <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BYS029WjnSLOOuaQvOo3L1A%3D%3D" target="_main"><img width="85" src="https://cdn.business2community.com/wp-content/uploads/2017/11/linkedin_1510718667-900x900.png" alt="Welcome to linked in"></a>
+
+            <a href="https://twitter.com/RAHULGD19?t=KEmm7dJgV5pkSoGnMNaitQ&s=09" target="_main"><img width="85" src="https://keystoliteracy.com/wp-content/uploads/2020/01/twitter-logo-transparent-15.png" alt="Welcome to twitter"></a><br><br>
+<br><br>
+            <b>
+                <big>Other wise Complete the following form for Contacting me </big><br>
+            </b>
+        </section>
+        <article>
+            <form action="/action2.php">
+                Enter your name:<input type="text" placeholder="First and Last name only"><br><br>
+
+                Enter your e-mail:<input type="email"><br><br>
+
+                Enter your year of academics: <input type="number" placeholder="eg.,2"><br><br>
+
+                <textarea name="Need_help" id="567" placeholder="How can I help You" row="4" cols="45"></textarea><br><br>
+
+                <input type="submit" name="suubmit" id="234">
+            </form>
+        </article>
+        <aside>
+            
+        </aside>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
+
