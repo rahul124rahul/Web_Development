@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    
+    <!-- This is a commenrt in HTML -->
+
+    <h1><blockquote>HTML - Hyper Text Markup Language</blockquote></h1>  <!--This is a heading tag ( It is from h1 to h6 )-->
+   
+    <p>I am trying to implement the HTML that I am learning . I need positive support. Thank you !!!</p>  <!-- This is paragraph tag -->
+    <i><b>HTML is the case insensative language in which no objection for using lower case or upper case letters or words </b></i>
+    <p><pre>
+        -Head and body tags are childrens of html tag.
+        -HTML is parent of head and body tags.
+        -Most of the HTML elements opening and closing tag with content in between opening and closing tags.
+        -Some of HTML tags have no content . These are called empty elements . ex, br,hr 
+
+        -<b>We can use .htm extension instead of .html </b>
+            - in this laptop index.htm is also working.
+
+        element = start tag + content + end tag
+
+    </pre></p>
+    <hr>    <!-- this is content sepration tag . It separate content by horizontal line -->
+
+    <b>This is bold tag</b> <!-- It makes content bold -->
+
+    <br>     <!-- this is line breaking tag -->
+    
+    <i>This is italic tag format </i>   <!-- It makes content in inialic form -->
+    
+    <br>
+    
+    <u>This is underline tag</u>    <!-- It underline the content in between the tag -->
+    
+    <pre>
+            -------congratulations--------
+        **************************************      <!-- In this tag same content is written with considering the indentation -->
+            for my simple html practical
+    </pre>
+
+    <br>
+
+    <big><strong><blockquote> Following is the image tag </blockquote>></strong></big>
+    <br>
+    <img src="cute_girl.jpg"  alt="Image not found!!!!" width="75%" >
+
+
+
+    <!-- Following is a table tag and table format --><br>
+    <br>
+    <table border="" </table>
+        <caption><b><big>Info about someone</big></b></caption><th>
+       
+        <tr><td>Sr.No.</td>             <!-- This is for heading of columns of tablem-->
+        <td>Name</td><td>Roll no.</td>
+        <td>Remark</td></tr>
+        </th>
+
+    <tb>
+        <tr>
+            <td>1</td>
+            <td>RAHUL</td>               <!-- This is for adding elements in the rows of the table -->
+            <td>21</td>
+            <td>COMPLETE</td>
+        </tr>
+
+        <TR>
+            <td>2</td>
+            <td>SONU</td>
+            <td>43</td>
+            <td>UNCOMPLETE</td>
+        </TR>
+
+        <TR>
+            <td>3</td>
+            <td>ABINAV</td>
+            <td>06</td>
+            <td>IN PROCESS</td>
+        </TR>
+    </tb>
+ 
+    </table>
+
+    <br><hr>
+
+
+    <q>Some links are given below : </q>    <br><br>
+
+    <button >       <!-- This is the button tag for creating button in the web page -->
+        
+        <!-- Following is the anchor tag , it is used for adding link referance in the web page -->
+        <a href="https://www.google.com" target="_main" >Google</a>  <br>
+
+    </button>
+    
+    <br><br>
+    <a href="http://www.wikipedia.com" target="main">Wikipedia</a>      <!-- Just try for link adding -->
+
+
+    <br><hr><br>
+    <b><i>RAHUL'S SOME HOBBIES : </i></b>
+
+    <ul type="square">                      <!-- This is the unordered list     Here square type is used -->
+        <li>Play cricket</li>               <!-- We can use 'circle' & 'disk' type also-->
+        <li>Ride bike</li>
+        <li>Quarrelling with neighbours</li>
+        <li>Trekking</li>  
+    </ul>
+
+
+    <strong><i>RAHUL'S FRIENDS : </i></strong>
+
+      <!-- This is ordered type of list -->
+    <ol type="1">   <!-- This is the lower case roman type counting -->
+
+        <li><ins>NEW YORK</ins><DEL>Tokyo</DEL></li>    <!-- Here insert and delete tags used ********** -->
+
+        <li>Nairobi</li>        <!-- In this we can use 'I','a','A','1' any of this also -->
+        <li>Riyo</li>
+        <li>Birlin</li>
+        <li>Professor</li>
+    </ol>
+<br><br>
+
+<b><i>Following are examples of Superscript & Subscript : </i></b>
+
+<p>e<sup>0</sup>=1</p>      <!-- This is the example of superscriprt  ( sup ) ( up )-->
+<p>H<sub>2</sub>+ 1/2 O<sub>2</sub> = H<sub>2</sub>O</p>        <!-- This is of subscript  ( sub ) ( down ) -->
+
+
+<br><b><i>Following is lorem content of 45 words</i></b>
+<!-- <p>lorem90</p>     By writing this and by putting curser after 90 and simply pressing 'Enter' we get garbage text of 90 words -->    
+<!-- This can be done for an no of words        for ex.: -->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquam voluptatum voluptatibus, eligendi qui aspernatur facilis repellat beatae perferendis corporis a repudiandae obcaecati, architecto eum recusandae voluptate perspiciatis, doloremque culpa. Distinctio totam sint unde, corrupti quibusdam, ab suscipit ipsam vel deleniti delectus, facilis quae accusantium?</p>
+
+
+</body>
+</html>
