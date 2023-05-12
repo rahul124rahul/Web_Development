@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS by Code With Harry - 1</title>
+    
+    <style>
+        
+
+    </style>
+    <link rel="stylesheet" href="CSS_by_CWH_.css">
+
+</head>
+<body>
+    <h1>THis is CSS practic going on </h1>
+
+
+    <div id="first">        <!-- div#first Enter -->
+        First 
+    </div>
+
+    <div id="second">       <!-- #second Enter-->
+        Second
+    </div>
+
+    <section class="s">         <!-- section.s Enter-->
+        r - Rahul <br>
+        <p>Hi!! I am rahul Dadge .</p>
+    </section>
+
+    <section class="s r">       <!-- section.s.r Enter-->   <!-- This way we can Assign More than one class to the same element -->
+        r s - Rahul Sanskriti 
+    </section>
+
+    <section class="r s p v">
+        R S P V - Rahul S P V
+    </section><br><br>
+
+
+    <span id="g">Goat</span>
+    <span class="hdt">jsbvchskdjsvh</span>
+    <sapn class="ks">dsjdjscd</sapn>
+
+</body>
+</html>
+
