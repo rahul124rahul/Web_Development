@@ -1,0 +1,319 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy_of_HTML_tags</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <!-- HTML is case insensative lan   guage
+        <!DOCTYPE html>     --It is instruction to brouser about HTML version
+        <html>     -- Root element which acts as container to hold all the code. Brouser should know that this 
+                        is HTML document permitted content. 
+        <head>     -- Everything written here will never be displayed in the brouser. It contains general
+                     information about the document. Like Title, defination of CSS and script sheets Metadata 
+        
+        ***** Block level element type :
+                - Takes up full block or width and adds structure in the web page 
+                - Always starts from new line 
+                - Always ends before the new line 
+                - eg., <p> , <div> , <h1>...<h6> , <ol> , <ul> 
+
+        ***** Inline level element type :
+                - Takes up what is required and adds meaning to the web page 
+                - Always start from where the previous element ended 
+                - eg., <spam> , <em> , <strong> , <img> , <a>         -->
+
+
+    <!-- Following are heading tags h1,h2,h3,h4,h5,h6 -->
+    <h1>Introduction to web development</h1>
+    <h2>Now Introduction to the Html</h2>
+    <h3>It's only revision of the HTML</h3>
+
+
+    <!-- The following is the anchor tag -->
+    <a href="https://www.facebook.com"><b>Facebook</b></a>
+    <br><br><br>
+
+
+    <!-- Following is the image tag  -->
+    <img src="Rahul.jpg" width="400" alt="Image not found">
+
+    <!-- combination of both image and anchor tag -->
+    <a href="https://instagram.com/i_am_s_d_rahul?igshid=YmMyMTA2M2Y=" target="_main"><img src="https://th.bing.com/th/id/OIP.yt_8U-wJTrdh9LAa178SywHaHZ?pid=ImgDet&rs=1" alt="Welcome to Instagram "  width="100px"></a>
+
+
+    <!-- following is the paragraph tag -->
+    <!-- use 'Toggled world wrap' in command template in setting if content is going out of screen -->
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae nostrum illum asperiores, a temporibus aperiam totam animi dolorum amet officiis ipsa suscipit culpa necessitatibus esse perspiciatis tempore distinctio voluptatem cupiditate laudantium magnam doloremque repellendus? Expedita non asperiores nesciunt porro deleniti.
+    </p>
+
+
+    <!-- Following one is pre ie. pre formatted tag -->
+    <pre>
+<br>Following one is pre tag 
+        This
+            is 
+                the
+                    step
+                        like 
+                            structure.
+    </pre><br><br>
+
+
+    <!-- Following is blockquote tag it indents the content -->
+    <blockquote>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cum sed recusandae vero sint voluptatibus beatae iusto atque placeat sapiente quis voluptatem cumque fugit numquam, excepturi accusamus quod illo reprehenderit incidunt! Facilis animi ea minima.</p>
+    </blockquote>
+
+
+    <!-- following is the short quotation . It do not indents the quote but it
+         insert the quotation mark around  quotation -->
+    <q><b>SAVE WATER , SAVE LIFE.</b></q>
+
+
+    <!-- abbr   ie. abbreviation tag        EXPLAIN MORE -->
+    <p>My name is <abbr title="Doctor">Dr.</abbr> Rahul. I am learning <abbr title="HYPER TEXT MARKUP LANGUAGE">HTML</abbr> right now.</p>
+
+
+    <!-- bdo tag 
+        - it stands for Bi Directional Override     ltr stands for left to right &  rtl for right to left -->
+    <bdo dir="ltr">Hello I am Rahul.</bdo><br>
+    <bdo dir="rtl">Hello I am Rahul.</bdo><br><br>
+
+
+
+    <!-- Following are some TEXT tags  -->
+        <!-- <b>  this is bold tag it makes bold the content inside it's tag -->
+            <b>This is a bold tag</b><br>
+
+        <!-- <i>   THis is italic tag it makes text inside it as italic format -->
+            <i>This one is italic tag.</i><br>
+        
+        <!-- <small> and <big>     These tag makes the inside content little small and little lorge resp. -->
+            <small>This one is samll tag.</small><br>
+            <big>This is big tag .</big><br>
+
+        <!-- <u>  This is the underline tag. It undderline the text inside it's opening and closing tag -->
+            <u>This is the underline tag</u><br>
+
+        <!-- <del>   This is delete tag. Here only cut line is drawn on the text included on it. -->
+            <p>Rahul is the <del>Cricket</del> lover boy.</p>
+
+        <!-- <ins>   This is insert tag. Here underline is drawn under the inserted text. -->
+            <p>Rahul is not a <ins>Bad</ins> boring guy.</p>
+
+        <!-- <strong> This tag is used for Emphasise the Text , It makes the text Bold -->
+            <strong>This one is strong  tag</strong><br>
+
+        <!-- <sub>   This is subscript tag . It display a text as subscript (Down)-->
+            <p>H<sub>2</sub> + 1/2 O<sub>2</sub> --> H<sub>2</sub>O</p>
+
+        <!-- <sup>   This is superscript tag . It display the text as superscript(up) -->
+            <p>e<sup>1</sup> = e</p>
+
+        <!-- <em>   this is used for emphasise the text . It converts the text in itialic form
+                        EXPLAIN MORE -->
+            <em>This is emphasise tag.</em><br>
+
+        <!-- <def>  This tag is used for defining the term.
+            NOT ANY SPECIAL  -->
+            <def>  Hello I am Rahul . </def>
+
+        
+
+    <!-- Self closing / Empty tags -->
+        <!-- <hr> tag   it stands for Horizontal rule (Empty line) -->
+            <p>following is the magic of the hr tag <hr> Have you seen this.</p>
+
+        <!-- <br> tag     This is breakline tag . used for moving to next line. -->
+            <p>Now I am going to next line. <br>Yes I done that.</p>
+
+
+    <!-- <div> and <span> tags
+            - Both of these are used to group different tags
+            - Acts like container
+            - Effective while styling
+            - difference: <div> is block level and <span> is inline level -->
+        <div id="div"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae praesentium laboriosam ullam nisi, tempora maxime officia aspernatur inventore distinctio iusto.</p></div>
+            <span>Rahul Boss</span><br>
+
+        
+        
+    <!-- Types of the list tag
+
+        <ol> tag stands for ordered list
+            - It is used to define series of events that takes place in some order 
+        
+        <ul> tag stands for unordered list   
+            - It used to define series of events that takes place where order is not important 
+        
+        <li> tag stands for list item
+            - used inside the ol and ul tags to define the events / elements    -->
+
+        <ol type="I">           <!-- This is an example odf the ordered list -->
+            <li>Rahul</li>
+            <li>Sachin</li>
+            <li>Prathamesh</li>
+            <li>Rajesh</li>
+            <li>Shiva</li>
+        </ol>
+
+        <ul type="square">      <!-- This is an example of Unordered list-->
+            <li>Rahul</li>
+            <li>Sachin</li>
+            <li>Prathamesh</li>
+            <li>Rajesh</li>
+            <li>Shiva</li>
+        </ul>
+    
+
+
+    <!-- <dl> --Defination list       <dt>   --Defination Term        <dd> -- Defination Data/Description -->
+        <dl>
+            <dt>HTML</dt>       <!-- This ia defination term -->
+            <dd>HTML states Hyper Text Markup Language. It is first step of front end development </dd><br>
+                <!-- Above one is defination data/description. It indents the content of description  -->
+
+            <dt>UPSC</dt>
+            <dd>Union Public Service Commssion is one of the toughest exam of India. It provides great genious minds and personality to the country.</dd>
+        </dl><br>
+
+
+    <!-- Following is some part of the CSS -->
+    <div style="color:red">
+        This is the use of the div tag .
+    </div><br><br>
+
+
+
+
+    <!-- <table>  This is the table tag it is used for creating a table in the web page 
+                - We need some other tsgs for completing the creation of the table 
+                -  <tr>  -> States the table row
+                -  <th>  -> it states table hader 
+                -  <td>  ->  it states the table data
+            Everything is always enclosed within <tr>
+                <thead>  -> To keep all header files 
+                <tbody>  -> To keep all body data 
+            For tabel box around the Table Write following command
+                <table border="1">      </table>                        -->
+        <table border="1">
+            <thead>
+            <caption><b><big>Info about four students</big></b></caption><th></th>  <!-- This is used for 
+                                                                                  heading  the table    -->
+                                     
+                    <tr>
+                        <th>sr.no.</th>
+                        <th>Name of student</th>
+                        <th>Roll no.</th>
+                        <th>Marks</th>
+                   
+                    </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Rahul Dadge</td>
+                    <td>21</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sachin Joshi</td>
+                    <td>7</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Satish Jadhav</td>
+                    <td>11</td>
+                    <td>92</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Priya Patil</td>
+                    <td>1</td>
+                    <td>97</td>
+                </tr>
+            </tbody>
+        </table><br><br>
+        
+
+
+    <!-- <form> tag    -  -->
+        <h3>Following is the sample form </h3>
+        <form action="/action.php">
+            Enter the first name: <input type="text" placeholder="Enter a Name "> <br><br>
+            Enter the last name:<input type="text" placeholder="Enter name"> <br><br>
+            Enter the username:<input type="text" placeholder="Enter username"> <br><br>
+
+            Enter the last name:<input type="password" placeholder="At least 8 characters"> <br><br>
+ 
+            Select Gender: <label for="101"><input type="radio" value="male" name="gender" id="101" >male<label>
+                                <label for="102"><input type="radio" value="female" name="gender" id="102">female </label><br><br>
+
+            Select the subjects: <label for="111"><input type="checkbox" value="Math" class="subject" id="111">Math</label>
+                                <label for="112"><input type="checkbox" value="Science" class="subject" id="112">Science</label>
+                                <label for="113"><input type="checkbox" value="History" class="subject" id="113">Math</label>
+                                <label for="114"><input type="checkbox" value="Geography" class="subject" id="114">Geography</label>
+                                <label for="115"><input type="checkbox" value="Sociology" class="subject" id="115">Sociology</label><br><br>
+
+            Select your State:<select name="State" id="State">
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Karal">Karal</option>
+                <option value="Andra pradesh">Andra pradesh</option>
+                <option value="Panjab">Panjab</option>
+                <option value="Goa">Goa</option>
+                <option value="Uttar Pradesh">Uttar pradesh</option>
+                <option value="Bihar">Bihar</option>
+            </select><br><br>
+
+            <b>Feedback: </b><br>
+            <textarea name="Feedback" id="980" placeholder="Please give the Feedback " rows="4" cols="84"></textarea> <br><BR>
+
+            <input type="submit" value="submit" ><br><br>
+
+
+            <iframe width="400" src="https://www.youtube.com/embed/z9bZufPHFLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+
+            <iframe width="400"  src="https://www.wikipedia.org" frameborder="0"></iframe><br><br>
+
+            <video width="400" src="/dance.mp4" controls loop>How to dance with girlfriend</video><br><br>
+            </form>
+
+
+            
+    <!-- cite tag                           EXPLAIN MORE
+        - it makes the text in Itylic style 
+        - It is used to give title of creative work (eg. a Book , a poem , a song , a movie , a painting , 
+            a clupture , etc.) --><br>
+    <cite>
+        Book : Rulers cacrifice<br>
+        poem : Rainbow life<br><br>
+    </cite>
+
+
+
+
+    <!-- Following one address tag   
+        - This makes the content in Itilic style 
+        - This tag defines contact information for an author/owner of a document or an artical.    
+        - The contact information can be an email address , URL , physical address , phone number , social media handel , etc. -->
+    <address>
+        Email : rahulxxxxx789@gmail.com <br>
+        mobile no : 92xxxxxx43  <br>
+        address : Lotus Home , Dadar Road ,Mumbai.  <br>
+    </address>
+
+
+
+</body>
+</html>
+
