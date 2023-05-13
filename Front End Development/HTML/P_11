@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRST CSS LINE</title>
+    
+    <!-- This is M1 of CSS styling -->
+    <style>         
+        body{
+            background-color: cadetblue ;
+        }
+        #first{
+            background-color: black;
+            color: white;
+        }
+        .bg-blue{
+        
+            background-color: red;
+            color:beige;
+        }
+    </style>
+
+                <!-- Either comment above one or below one to experience CSS  -->
+
+                <!-- Here preferance of the link tag and style tag is very important the secondly defined tag will override the styling content -->
+    
+    <link rel="stylesheet" href="CSS_Ch1_style_sheet.css">
+
+
+</head>
+<body>
+    <div id="first">
+        first
+    </div><br>
+
+    <spam id="Rahul"><b>This is Rahul</b></spam>
+    
+    <!-- & This is M2 of CSS styling -->
+    <div id="second " style="background-color: skyblue;">
+        second
+    </div>
+
+    <section class="red">
+        red
+    </section>
+
+    <section class="red bg-blue border-purple">
+        red bg blue border purple
+    </section>
+
+</body>
+</html>
