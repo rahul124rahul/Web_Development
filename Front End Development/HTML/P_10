@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS  selectors</title>
+    <style>
+        h1{
+            color:red;
+        }
+        .abc{
+            background-color: antiquewhite;
+        }
+
+        .def{
+            background-color: orange;
+            color: green;
+        }
+
+        #Rahul,h2{
+            color:black;
+            background-color: pink;
+        }
+        .mv{
+            color:black;
+            background-color: yellow;
+            border: 2px solid black;
+        }
+
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+
+        button{
+            color:white;
+            background-color: red;
+            border-color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="abc">
+        <h1>
+            This is my first CSS selectors page
+        </h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor quidem quod laudantium culpa assumenda similique illo alias expedita! Repellat atque consequuntur quibusdam aliquid perspiciatis tempora, commodi numquam doloremque debitis soluta! Laudantium quam, cumque, optio quaerat aperiam sint, dolore eligendi provident quidem tempore fugiat.
+        </p>
+    </div>
+
+    <div class="def">
+        <h1>This is our another h1 </h1>
+
+        <div id="Rahul">
+            Rahul is very funny guy.
+        </div><br><br>
+
+        <span class="mv">First one</span><br><br>
+        <span class="mv">Second one </span><br><br>
+        <span class="mv">Third one</span><br><br>
+
+
+    </div>
+
+    <h2>
+        Hello I am h2 tag .
+    </h2>
+    
+    <button style="zoom: 340%; " >
+        <b>submit</b>
+    </button>
+    
+    
+</body>
+</html>
