@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1 practice</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #div,#head{
+            color:white;
+            background-color: red;
+        }
+        .class{
+            color:black;
+            background-color: yellow;
+        }
+
+        .division{
+            color: aquamarine;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+        <div id="div">
+            this is the div tag with id.
+        </div><br>
+    
+        <div class="class division">
+            this is the div tag with class.
+        </div><br>
+
+        <div id="head"  style="background-color:bisque; color:blueviolet"> <!-- Here inline CSS will overcome -->
+            This is the head. </div><br>
+
+        <div id="head">This is another head . </div><br>
+
+
+        <div class="class">
+            Royal family is very careful about their respect.
+        </div><br>
+
+        <spam class="class" style="zoom: 233%;">Royal Dogs </spam>
+</body>
+</html>
