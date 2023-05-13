@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors_and_Background</title>
+</head>
+<link rel="stylesheet" href="CSS_Ch2_colors_bc.css">
+<style>
+    body{
+        background-color: rgb(97, 93, 93);
+        background-image: url(RAHUL_G_D.jpg);
+        background-repeat: space;
+        background-size: contain; 
+        background-position: center;
+        background-attachment: fixed;
+        
+    }
+</style>
+<body>
+    <div class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, architecto. Cumque odit ab iste! Modi saepe beatae enim, quam, hic id sed mollitia fugit non, asperiores quasi ducimus veritatis? Sit earum quod quidem eius.</div><br>
+
+    <div class="green">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eligendi beatae ex explicabo sequi doloribus praesentium! Dolorum ea pariatur vitae quis repudiandae animi voluptatem deleniti illo doloremque excepturi nam facilis enim qui saepe totam nesciunt sint magni dignissimos, quasi necessitatibus odio corporis distinctio.</div>  
+</body>
+</html>
