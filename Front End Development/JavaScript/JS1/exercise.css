@@ -1,0 +1,15 @@
+.bug{
+  background-color: rgb(162, 248, 162);
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 17px;
+}
+
+.wish{
+  border-radius: 6px;
+  background-color: aliceblue ;
+  border: 2px solid black;
+  font-size: 15px;
+  padding: 2px 20px;
+}
