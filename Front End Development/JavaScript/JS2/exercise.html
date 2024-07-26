@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variable Exercise</title>
+  <style>
+    h2{
+      color: rgb(115, 128, 118);
+    }
+  </style>
+</head>
+<body>
+  <h1>Variable Practice Exercise</h1>
+
+  <h2 id="name"></h2>
+
+  <script>
+    const name = "RAHUL";
+    document.querySelector('#name').innerText=(`My name is ${name}`); 
+
+    let Cart_Val = 121223*323;
+    console.log(`This is the cart value ${Cart_Val}`)
+
+    const GST=18/100;
+    console.log(`The GST on the cart Value will be ${Cart_Val*GST}`)
+
+
+    // Use of eval function
+    console.log(eval("1+3+4+5"))
+
+    console.log(eval("23.34+424+23"));
+    
+   </script>
+</body>
+</html>
