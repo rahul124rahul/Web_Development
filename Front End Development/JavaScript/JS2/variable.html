@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables</title>
+    <link rel="stylesheet" href="var_exercise.css" />
+    <style>
+      h1 {
+        color: greenyellow;
+        background-color: black;
+        padding: 5px 10px;
+        border-radius: 20px;
+        text-align: center;
+      }
+
+      h2.m{
+        color: rgb(232, 55, 251);
+      }
+    </style>
+  </head>
+  <body>
+    <span>
+      <h1>Variables of JavaScript</h1>
+    </span>
+
+    <hr />
+    <h2 class="m">Mintra bag Exercise</h2>
+
+    <button class="b1" onclick="
+    t++;
+    document.querySelector('#ans').innerText = `Your bag has ${t} items.`;">Add to Bag</button>
+
+    <button class="b2" onclick="t--;
+    document.querySelector('#ans').innerText = `Your bag has ${t} items.`;">Move to wishlist</button>
+
+    <button class="b1" onclick="t+=2;
+    document.querySelector('#ans').innerText = `Your bag has ${t} items.`;">Add 1+1 sale Item</button>
+
+    <h2 id="ans"></h2>
+
+
+    <script>
+      let str = "Hello Friends";
+      console.log("Hello guys");
+      console.log(str);
+
+      let total = `This is the total tax payable for me ₹${
+        (1200000 * 18) / 100
+      }`;
+      console.log(total);
+
+      console.log(
+        `This is the console` + ". Here the Variables of JavaScript is defined."
+      );
+
+      let a = 4;
+      let b = 5;
+      let c = 5 + b;
+      console.log(`The sum of ${a} & ${b} is` + c);
+
+      let t = 0;
+      document.querySelector("#ans").innerText = "Your bag has " + t + " items.";
+
+
+      // Ways to create variables
+      let p=90;
+      var q=344;
+      const pi=3.14159265359;
+
+    </script>
+  </body>
+</html>
