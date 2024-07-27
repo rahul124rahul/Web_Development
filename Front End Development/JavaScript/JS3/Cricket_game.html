@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bat Ball Stump Game</title>
+	<style>
+		body{
+			text-align: center;
+		}
+		.button{
+			border: 3px solid red;
+			background-color: black;
+			color: white;
+			border-radius: 10px;
+			font-size: larger;
+			padding: 10px 20px;
+			margin-inline: 10px;
+			margin-top: 20px;
+		}
+		.button:hover{
+			border-color: rgb(72, 251, 27);
+		}
+	</style>
+</head>
+<body>
+	<h1>Bat Ball Stump Game</h1>
+	<button class="button" onclick="
+	const aa=`You have chosen Bat`;
+	let randomno = Math.random()*3;
+	let comchoice=''
+	if(randomno<=1){
+		comchoice='Bat'
+	}
+	else if(randomno<=2){
+		comchoice='Ball'
+	}
+	else{
+		comchoice='Stump';
+	}
+	const bb=`Computer Choice is ${comchoice}.`
+
+	var cc=``;
+	if(comchoice === 'Ball'){
+		cc=`!!!!!! You Won !!!!!!!`;
+	}
+	else if(comchoice == 'Bat'){
+		cc=`XXXXXXXX Match is Tie XXXXXXXX`
+	}
+	else if(comchoice == 'Stump'){
+		cc=`......... You lost ........`
+	}
+
+	alert(`${aa}.\n${bb}.\n${cc}.`);
+	">Bat</button>
+
+
+	<button class="button"
+	onclick="
+	aa=`You have chosen Ball`;
+	randomno = Math.random()*3;
+	comchoice=''
+	if(randomno<=1){
+		comchoice='Bat'
+	}
+	else if(randomno<=2){
+		comchoice='Ball'
+	}
+	else{
+		comchoice='Stump';
+	}
+	bb=`Computer Choice is ${comchoice}.`
+
+	var cc=``;
+	if(comchoice === 'Bat'){
+		cc=`!!!!!! Computer Won !!!!!!!`;
+	}
+	else if(comchoice == 'Ball'){
+		cc=`XXXXXXXX Match is Tie XXXXXXXX`
+	}
+	else if(comchoice == 'Stump'){
+		cc=`......... Computer lost ........`
+	}
+
+	alert(`${aa}.\n${bb}.\n${cc}.`);
+	">Ball</button>
+
+
+	<button class="button"
+	onclick="
+	aa=`You have chosen Stump`;
+	randomno = Math.random()*3;
+	comchoice=''
+	if(randomno<=1){
+		comchoice='Bat'
+	}
+	else if(randomno<=2){
+		comchoice='Ball'
+	}
+	else{
+		comchoice='Stump';
+	}
+	bb=`Computer Choice is ${comchoice}.`
+
+	var cc=``;
+	if(comchoice === 'Bat'){
+		cc=`!!!!!! You Won !!!!!!!`;
+	}
+	else if(comchoice == 'Stump'){
+		cc=`XXXXXXXX Match is Tie XXXXXXXX`
+	}
+	else if(comchoice == 'Ball'){
+		cc=`......... You lost ........`
+	}
+
+	alert(`${aa}.\n${bb}.\n${cc}.`);
+	">Stump</button>
+</body>
+</html>
