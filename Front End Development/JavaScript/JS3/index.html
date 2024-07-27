@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>If Else</title>
+</head>
+<body>
+	<h1>If-Else</h1>
+	<h2>Boolean</h2>
+	
+
+
+	<script>
+		console.log(4<3);
+		console.log(4==4);
+		console.log(typeof 'rat');
+		console.log(typeof(4==2));
+		console.log(typeof 32);
+		let a=45
+		let b='Rahul'
+		let c='45'
+
+		// === & !== checks the value and data types also
+		console.log(a==c)
+		console.log(a===c)
+		console.log(a!=c)
+		console.log(a!==c)
+
+		// if-else
+		console.log("Check if you can Drive?")
+		let age=88
+		if(age>65){
+			console.log("Try to avoid Driving")
+		}
+		else if(age>=18){
+			console.log("You can Drive.")
+		}
+		else{
+			console.log("Sorry dear, you can't drive.")
+		}
+
+
+		// logical Operators
+
+
+		if(age>=18 && age<=65){
+			console.log("Your are allowed to drive.")
+		}
+		else{
+			console.log("Driving not allowed.")
+		}
+
+		console.log(!true)
+		console.log(!(9==='9'))
+
+
+		// Scope Global Local
+		// let has local scope
+		// var has global scope and accessible anywhere
+		// const is also local scope
+
+
+
+
+		// Truthy & Falsy values
+		let p;
+		console.log(p)
+		let q=null
+		console.log(q)
+
+
+
+
+		// If alternatives
+
+		let res = 2>3 ? "2>3" : "2<=3";
+		console.log(res)
+
+		// Guard operator
+		let ag=0
+		let f = ag || 18
+		console.log(f)
+
+		// Default operator
+
+		let pp=null
+		let ff = pp ?? 21;
+		console.log(ff)
+	</script>
+</body>
+</html>
