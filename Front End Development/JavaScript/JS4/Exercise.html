@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Exercise of JavaScript Functions</title>
+</head>
+
+<style>
+	h1.rr{
+		color: red;
+	}
+	h1.ll{
+		color: rgb(42, 246, 27);
+	}
+</style>
+<body>
+	<h1 class="rr">Exercise</h1>
+	
+	<h3>1. Create a method to check if a number is odd or even</h3>
+	<!-- <input type="text" id="oe">
+	<button class="button" onclick="OddEven(document.getElementById('#oe'))">Check</button>
+	<h3 class="ans ans1"></h3> -->
+	
+	<br>
+	<h3>2. Create a method to return larger of two numbers.</h3>
+	<!-- <input type="text" id="oe">
+	<button class="button" onclick="">Check</button>
+	<h3 class="ans"></h3> -->
+	
+	<br>
+	<h3>3. Create Method to convert Celsius to Fahrenheit.</h3>
+	<h4>F=(9/5)*C+32</h4>
+	<!-- <input type="text" id="oe">
+	<button class="button" onclick="">Check</button>
+	<h3 class="ans"></h3>
+	 -->
+
+
+	<h1 class="ll  ">Functions done Excellently</h1>
+
+
+	<script>
+		// 1. To check Odd or Even
+		function OddEven(n){
+			let f;
+			if(n%2==0) f = 'Even';
+			else f = 'Odd';
+			document.querySelector('.ans1').innerHTML = f;
+		}
+
+
+		// 2. To return Larger one
+		function larger(a,b){
+			if(a>b)return a;
+			else if(b>a)return b;
+			return 'Both are Equal';
+		}
+		console.log(larger(3,3))
+
+
+		// 3. Celsius to Fahrenheit
+		function TempConvert(c){
+			let f = (9/5)*c + 32
+			return f;
+		}
+		console.log(TempConvert(5))
+
+	</script>
+</body>
+</html>
