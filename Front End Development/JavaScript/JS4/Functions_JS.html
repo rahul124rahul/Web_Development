@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+</head>
+<body>
+
+	<h1>Functions in JavaScript</h1>
+	
+
+	<script>
+		let age=21;
+		console.log(`Your age is ${age}`)
+		age=11;
+		console.log(`Your age is ${age}`)
+		age=2;
+		console.log(`Your age is ${age}`)
+		age=91;
+		console.log(`Your age is ${age}`)
+
+		// To avoid above repeating work we define function and call whenever required
+
+		// Function calling is also called as function invoking.
+		
+
+		// Function without parameter and without return statement
+		function PrintAge(){
+		console.log(`Your age is ${age}`);
+		}
+
+		PrintAge()
+		age=1
+		PrintAge()
+
+
+		// function without parameters but returning value
+		function Genrandom(){
+			let p=Math.random();
+			let r=p*3;
+			return r;
+		}
+
+		console.log(Genrandom());
+		console.log(Genrandom());
+		console.log(Genrandom());
+		console.log(Genrandom());
+		console.log(Genrandom());
+		console.log(Genrandom());
+		console.log(Genrandom());
+
+
+		// Same as above Function not taking the parameters and returning the value 
+		function determiineDriveStatus(){
+			let age=22
+			let status
+			if(age<0 || age===undefined){
+				status='You are Avatar!!!!!!!';
+				return status
+			} 
+			if(age>18){
+				status='You can Drive'
+			}
+			else{
+				status='You are not allowed to Drive.';
+			}
+			return status;
+		}
+		let g=determiineDriveStatus();
+		console.log(g)
+
+
+
+		// Now the function is defined with parameters and returning values from that 
+		function sum(a,b){
+			let c=a+b;
+			return c;
+		}
+
+		// In following function calling we are passing arguments in the function parenthesis
+		let pp = sum(12,21);
+		console.log(pp)
+
+		console.log(sum(23,455));
+		console.log(sum(1,-2));
+		console.log(sum(23.22,23.5));
+
+
+		// Default parameter value for function
+		function greeting(name='dear'){
+			console.log(`Namaste ${name} uncle.`)
+		}
+		greeting('Titu')
+		greeting()
+	</script>
+</body>
+</html>
