@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Object JS</title>
+</head>
+<body>
+	<h1>Object in JavaScript</h1>
+	<h3>Very detailed new concepts are defined in this page please try to refer it.</h3>
+
+	<script>
+		// Object defination in JavaScript
+		let product = {
+			name: 'RS~shirts',
+			price: 399,
+			company: 'Poonam',
+		};
+
+		console.log(product)
+		// Accessing the values of the key or property defined in the object
+		console.log(product.name)
+		console.log(product.price)
+		console.log(product.company)
+
+		// another way of accessing the data of key or the values of the property in the object
+		console.log(product['name'])
+
+		// we can use following property as follows also.
+		let cost = 'price'
+		console.log(product[cost])
+		// console.log(product['name'])
+		console.log(product['company'])
+
+
+		// We can add the values & delete the values from the object
+
+		// We can delete property in object with it's values as follows
+		console.log(product)
+		delete(product.company)
+		console.log(product)
+
+		// We can add property as follows
+		product.Rating = '4';
+		console.log(product)
+
+		// We can change values of property as follows
+		product.price = 999;
+		console.log(product)
+
+		product.name = null
+		console.log(product)
+
+
+
+		// Inside Object
+		// We can define other object inside the object & we can define function as the property in the object
+		let SellObj = {
+			company: 'Mango',
+			itemName: 'Cotton T-shirt',
+			price: 899.1298,
+			rating: {
+				stars: 4.3,
+				views: '8k',
+			},
+			DisplayPrice: function(){
+				return `₹${this.price.toFixed(2)}`;
+			},
+		};
+		console.log(SellObj.price);
+		console.log(SellObj.DisplayPrice());
+		console.log(SellObj.rating)
+		console.log(SellObj.rating.stars)
+		console.log(SellObj.rating.views)
+
+		// Another Similar Object
+		let Greet = {
+			name: 'Priyanka',
+			age: 21,
+			send: function(p='Friend.'){
+				return `${this.name} will you be my ${p}`;
+			},
+		}
+
+		console.log(Greet);
+		console.log(Greet.name)
+		console.log(Greet.age)
+		console.log(Greet.send)
+		console.log(Greet.send())
+		console.log(Greet.send("Girl Friend."))
+		console.log(Greet.send("Wife."))
+
+
+		// Auto Boxing 
+		// 1. Automatic conversion of primitives to objects.
+			// In this the primitives are converted to object automatically for applying the different methods.
+		console.log('My name is rahul'.length)
+		// 2. This allows properties and methods to be used on primitives.
+		// more examples are as follows
+		console.log('India is Hindu Rashtra.'.toLowerCase())
+		console.log('India is Hindu Rashtra.'.toUpperCase())
+		console.log('India is Hindu Rashtra.'.indexOf('Hindu')) 
+		console.log('India is Hindu Rashtra.'.indexOf('a')) 
+
+
+
+
+		// Object references
+
+		let x=5;
+		let y=x;
+		// here new variable of y name is created and value of x is copied in y.
+		console.log(`x = ${x} , y = ${y}`);
+		x=9
+		// x is changed individually without affecting the y.
+		console.log(`x = ${x} , y = ${y}`);
+		
+
+		// In case of the Objects
+		let p = {num:34};
+		let q = p;
+
+		console.log(`p(nums) = ${p.num} & q(num) = ${q.num}`)
+
+		q.num=444;
+
+		// Here p & q are only references of the same object, so change in object property's value is reflected in both cases 
+		console.log(`p(nums) = ${p.num} & q(num) = ${q.num}`)
+		 
+
+		// When we are comparing with == or === we're comparing references only, not content
+		let w = {h:1234};
+		let s = {h:1234};
+		console.log(w==s)
+		console.log(w===s)
+
+		// Changes to one reference affects all copies.
+
+
+
+
+
+		//  Object shortcuts
+
+		let myObj = {
+			name: 'RAHUL',
+			Height: '168cm',
+			weight: '65Kg'
+		}
+		
+		// Destructuring
+		
+		// let name=myObj.name;
+		// above is same as following
+		let {name} = myObj
+			// We can Destructure more than one element by comma separated values
+		let {Height,weight} = myObj;
+		console.log(name)
+		console.log(Height)
+		console.log(weight)
+
+		// property shorthand
+		let age=21;
+		let myObj1 = {
+			name: 'RAHUL',
+			Height: '168cm',
+			weight: '65Kg',
+			age
+		}
+		console.log(myObj1);
+		console.log(myObj1.age);
+		
+		// Above is same as following 
+			// let age=21;
+			// let myObj1 = {
+			// 	name: 'RAHUL',
+			// 	Height: '168cm',
+			// 	weight: '65Kg',
+			// 	age: age,
+			// }
+
+
+		// Method Shorthand
+		let sum = {
+			a:12,
+			add(aa=this.a , bb=6){
+				return aa+bb; 
+			}
+		}
+		console.log(sum.add(5,5));
+		console.log(sum.add());
+		
+		// Above is similar as following
+		let sum1 = {
+			a:12,
+			add: function(aa=this.a , bb=6){
+				return aa+bb; 
+			}
+		}
+
+		console.log(sum1)
+		console.log(sum1.add)
+		console.log(sum1.add())
+		console.log(sum1.add(33,44))
+
+
+		
+	</script>
+</body>
+</html>
