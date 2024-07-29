@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bat Ball Stump Game</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .button {
+        border: 3px solid red;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        font-size: larger;
+        padding: 10px 20px;
+        margin-inline: 10px;
+        margin-top: 20px;
+      }
+      .button:hover {
+        border-color: rgb(72, 251, 27);
+      }
+    </style>
+  </head>
+  <body>
+   <h1>Bat Ball Stump Game</h1>
+
+   <button class="button" onclick="printRes('Bat');">Bat</button>
+
+	<button class="button" onclick="printRes('Ball')">Ball</button>
+
+   <button class="button" onclick="printRes('Stump')">Stump</button>
+
+
+   <script>
+		function GenComChoice(){
+			let randomno = Math.random()*3;
+			if(randomno<=1) return 'Bat';
+			else if(randomno<=2) return 'Ball';
+			return choice='Stump';
+		}
+
+
+		function getRes(UserMove,CompMove){
+			if(UserMove === CompMove){
+				return `XXXXXXXX Match is Tie XXXXXXXX`
+			}
+			else if((UserMove=='Bat' && CompMove=='Ball') || (UserMove=='Ball' && CompMove=='Stump') || (UserMove=='Stump' && CompMove=='Bat')){
+				return `!!!!!! You Won !!!!!!!`;
+			}
+			return `......... You lost ........`;
+		}
+
+
+		function printRes(UserChoice){
+			let ComChoice=GenComChoice();
+			let Res = getRes(UserChoice,ComChoice);
+
+			let p=`You have chosen ${UserChoice}.\nComputer Choice is ${ComChoice}.\n${Res}`
+			
+			console.log(p);
+			alert(p);
+		}
+
+	</script>
+  </body>
+</html>
