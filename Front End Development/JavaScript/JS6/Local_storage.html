@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Local Storage</title>
+</head>
+<body>
+	<h1>Local storage</h1>
+
+	<h2>1.Persistent data storage in the browser.</h2>
+	<h2>2. setItem : Stores data as key-value pairs.</h2>
+	<h2>3. Only strings can be stored.</h2>
+	<h2>4. getItem : Retrives data based on key.</h2>
+	<h2>5. More Methods: localStorage.clear() & localStorage.removeItem(key)</h2>
+	<h2>6. Do not store sensitive information. Viewable in storage console.</h2>
+
+	
+	<script>
+		let product = {
+			name: 'Tshirt',
+			cost: 839,
+			rating: {
+				stars: 4.4,
+				views: '8k',
+			},
+		};
+
+		console.log(product);
+
+		localStorage.setItem("Name","RAHUL DADGE");
+		localStorage.setItem("Age",21);
+
+		console.log(localStorage.getItem("Name"))
+		console.log(localStorage.getItem("Age"))
+
+		// localStorage.setItem("product",product)
+		// Above will store only datatype of the property and key not whole object
+		
+		localStorage.setItem("product",JSON.stringify(product))
+		console.log(localStorage.getItem("product"))
+
+		let new_product = JSON.parse(localStorage.getItem("product"));
+		console.log(new_product)
+
+		// Following command will remove the key value pair whose key is passed in the localStorage.removeItem(key)
+		localStorage.removeItem('Age');
+		console.log(localStorage.getItem("Age"))
+
+		// Following command will remove all the key-value pairs from the local storage
+		localStorage.clear();
+
+
+	</script>
+</body>
+</html>

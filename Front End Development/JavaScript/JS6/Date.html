@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Date & DOM in JS</title>
+</head>
+<style>
+	h1{
+		color: rgb(255, 251, 0)
+	}
+	.time, .DOM , .practice{
+		border: 10px solid rgb(136, 15, 211);
+		padding: 10px 70px;
+		color: aqua;
+		background-color: black;
+	}
+	.Dom{
+		display: flex;
+	}
+	.d1,.d2{
+		padding: 10px 30px;
+		border: 5px solid white
+	}
+</style>
+<body>
+	<div class="time">
+		<h1>Date in JavaScript</h1>
+
+		<h2>1. new Date() Creates a  new Date object with the current date & time.</h2><br>
+
+		<h3 style="color: red;">2. Key Methods</h3>
+		<h2> # getTime() : MIlliseconds since Epoch</h2>
+		<h2> # getFullYear() : 4-digit year</h2>
+		<h2> # getDay() : Day of the Week</h2>
+		<h2> # getMinutes() : current minute</h2>
+		<h2> # getHours() : current hour.</h2>
+		<br>
+
+		<h2>3. Crucial for timestamps, scheduling, etc.</h2>	
+	</div>
+<br>
+	<div class="DOM 2classes">
+		<div class="d1">
+			<h1>DOM and Element Properties</h1>
+			<h2>1. location</h2>
+			<h2>2. title</h2>
+			<h2>3. href</h2>
+			<h2>4. domain</h2>
+			<h2>5. innerHTML</h2>
+			<h2>6. innerText</h2>
+			<h2>7. classList</h2>
+		</div><br>
+		<div class="d2">
+			<h1>DOM and Element Methods</h1>
+			<h2>1. getElementById</h2>
+			<h2>2. querySelector</h2>
+			<h2>3. classList: add(), remove()</h2>
+			<h2>4. createElement()</h2>
+			<h2>5. appendChild()</h2>
+			<h2>6. removeChild()</h2>
+			<h2>7. replaceChild()</h2>
+		</div>
+	</div>
+	<br>
+
+	<div class="practice">This is practice section.</div>
+
+	<script>
+		let mydate = new Date();
+		console.log(mydate);
+		console.log(mydate.getTime());
+		console.log(mydate.getFullYear());
+		console.log(mydate.getDay());
+		console.log(mydate.getMinutes());
+		console.log(mydate.getHours());
+		console.log(mydate.getMilliseconds());
+
+		// following command will permanently add the class in this html file
+		console.log(document.querySelector('.DOM').classList.add('ppp'))
+
+		// following command will permanently remove the class from html file
+		// console.log(document.querySelector('.DOM').classList.remove('DOM') )
+
+
+		// Create element
+		let button = document.createElement('Button');
+		let paragraph = document.createElement('p');
+		let h = document.createTextNode('thanksssssssssss');
+
+		// Append child 
+		document.querySelector('.practice').appendChild(button).innerText = "Don't Touch me!!"
+		document.querySelector('.practice').appendChild(paragraph).innerText = "India is my country."
+		// document.querySelector('.practice').appendChild(h).innerText = "||| Thank you |||"
+
+		// Remove child
+		document.querySelector('.practice').removeChild(button)
+
+		// Replace child
+		document.querySelector('.practice').replaceChild(h,paragraph);
+	</script>
+</body>
+</html>
