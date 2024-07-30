@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JSON</title>
+</head>
+<body>
+	<h1>JSON</h1>
+		<h2>JavaScript Object Notation</h2>
+			<p>Not the same as JS object, but similar.</p>
+		<h2>Commonly used in network calls and data storage.</h2>
+		
+	<h1>There are 2 major methods used i.e.,</h1>
+		<h2>JSON.stringify() & JSON.parse()</h2>
+		<p>Strings are easy to transport over network.</p>
+		<h1>JSON is data format, JS object is a data structure.</h1>
+
+	<script>
+		// JSON
+		let product = {
+			name: 'Tshirt',
+			price:890,
+			rating : {
+				stars: 4.2,
+				views:'23k',
+			},
+		};
+
+		console.log(product) 
+		console.log(typeof product) 
+
+		let JSON_procuct = JSON.stringify(product);
+		console.log(typeof JSON_procuct) 
+		console.log(JSON_procuct) 
+
+		let obj_product = JSON.parse(JSON_procuct);
+		console.log(typeof obj_product)
+		console.log(obj_product)
+		
+		obj_product.name = 'Pant';
+		console.log(obj_product)
+		console.log(product)
+		console.log(JSON_procuct)
+		</script>
+</body>
+</html>
