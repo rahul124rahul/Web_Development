@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercise</title>
+	<style>
+		.press{
+			height: 50px;
+			width: 50px;
+			font-size: 25px;
+			border-radius: 10px;
+		}
+		.odd {
+			border-color: red;
+			color: black;
+			background-color: rgb(255, 188, 64);
+		}
+		.even{
+			border-color: red;
+			color: rgb(0, 0, 0);
+			background-color: rgb(69, 248, 69);
+		}
+	</style>
+</head>
+<body>
+	<h1>Practice Exercise on JSON, Local Storage, Date & DOM</h1>
+	<br>
+	
+	<h2>1. Display good morning, afternoon and night based on current hour.</h2>
+	<h2 class="ans" id="greeting"></h2>
+	
+	<h2>2. Add the name to the output too.</h2>
+	<p>Both questions are solved in one code only.</p>
+
+
+	<!-- Important -->
+	<h2>3. Create a Button which shows the number how many times it has been pressed.</h2>
+	<h2>  </h2>
+	<h2> - The click count should also survive browser refresh.</h2>
+
+
+	<button class="press" onclick="presscount()"></button>
+
+
+
+
+
+	<script>
+		// 1. Display good morning, afternoon and night based on current hour.
+		let currTime = new Date();
+		let h = currTime.getHours();
+		let m = currTime.getMinutes();
+		console.log(typeof h)
+		console.log(h)
+		console.log(m)
+		
+		// 2. Add the name to the output too.
+		function greeting_(name='Dear'){
+			let greet ='';
+			if(h<5) greet='Night';
+			else if (h<12) greet='Morning'
+			else if (h<17) greet='Afternoon'
+			else if (h<20) greet='Evening'
+			else{ greet = 'Night'}
+
+			let ans = `Good ${greet} ${name}, it's ${h} and ${m} minutes.`
+			return ans;
+		}
+
+		document.querySelector('#greeting').innerText = greeting_('Rahul');
+
+		let p = greeting_();
+		console.log(p)
+
+
+
+
+
+		// 3. Create a Button which shows the number how many times it has been pressed.
+		let pn = localStorage.getItem('pn') || 0;
+		function presscount(){
+			pn++;
+			localStorage.setItem('pn',pn);
+			update(pn);
+		 }
+
+		 function update(pn){
+			let ref = document.querySelector('.press');
+			if(pn%2==0){
+				ref.classList.remove('odd');
+				ref.classList.add('even');
+			}
+			else{
+				ref.classList.remove('even');
+				ref.classList.add('odd');
+			}
+			ref.innerText = pn;
+		 }
+
+		 update(pn);
+
+
+
+		
+	</script>
+</body>
+</html>
