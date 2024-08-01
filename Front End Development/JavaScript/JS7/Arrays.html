@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Array</title>
+</head>
+<body>
+	<!-- 9:00:00  -->
+	<h1>Arrays</h1>
+
+	<h2>Array</h2>
+	<p>An array is just a list of values.</p>
+	<p>Index: Starts with 0.</p>
+	<p>Arrays are used for storing multiple values in a single variable.</p>
+	<br>
+	<p><b>Syntax & values</b></p>
+	<p>let arr = [1, true , 'Rahul' , 23.23 , 1 , {likes: '2K'}]</p>
+	<p>1. Use [] to create a new array, [] brackets enclose list of values.</p>
+	<p>2. Arrays can be saved to a variables.</p>
+	<p>3. Accessing values: Use [] with index.</p>
+	<p>4. Syntax Rules:</p>
+	<pre>
+	- Brackets start and end the array.
+	- Values separated by commas.
+	- Can span multiple lines.
+	</pre>
+	<p>5. Array can hold any value, includeing arrays.</p>
+	<p>6. typeof operator on Array return Object.</p>
+
+
+	<p><b>Array Properties & Methods</b></p>
+	<p>1. Array.isArray() checs if a variable is an array.</p>
+	<p>2. Length property holds the size of array.</p>
+	<p>3. Common Methods:</p>
+	<pre>
+	<big>- push/pop : Add or remove to end.</big>
+	<big>- shift/unshift : Add or remove from front.</big>
+	<big>- splice : Add or remove element.</big>
+	<big>- tostring : convert to string.</big>
+	<big>- sort : Sort elements</big>
+	<big>- valueOf : Get array itself.</big>
+	</pre>
+	<p>4. Array also use reference like objects.</p>
+	<p>5. De-structuring also works for Arrays.</p>
+
+
+
+	<script>
+		// Array
+		let nos = [1,2,3,44,55,5,5,5,'Rahul','P',23.34]
+		console.log(nos)
+		// accessing values from array
+		console.log(nos[4])
+		console.log(nos[8])
+
+		let arr2 = [1, true, null, ,
+		 'Rahul','Piya is happy.']
+		console.log(arr2)
+		console.log(typeof arr2)
+
+
+		let obj = {name:"RAHUL",age:32,}
+
+		console.log(Array.isArray(arr2))
+		console.log(Array.isArray(2))
+		console.log(Array.isArray("Rahul"))
+		console.log(Array.isArray(obj))
+
+		console.log(arr2.length)
+		console.log("----------------------------------------")
+
+
+
+
+		let arr = [1,'Rhaul', true, 23.45]
+		console.log(arr)
+		
+		// Check array or not
+		console.log(Array.isArray(arr))
+		
+		// Check length
+		console.log(arr.length)
+		
+		// adding element from back
+		console.log(arr.push(97))
+		console.log(arr)
+		// removing element from back
+		console.log("Popped element : "+ arr.pop())
+		console.log(arr) 
+
+		// Adding Element form front
+		console.log(arr.unshift('Love'))
+		console.log(arr) 
+		// removing Element form front
+		console.log("Removed element is : " + arr.shift())
+		console.log(arr) 
+
+		// Splice will delete elemnts from given index up to given no of elements from provided index , and after 2 arguments it will add all next elemts to the array
+		console.log(arr.splice(1,2))
+		console.log(arr)  
+		
+		arr.splice(0,1,"Piya","MV",976363 , 98.23)
+		console.log(arr)  
+		
+		arr.splice(0, 0, "Shivam","Tiger","YES")
+		console.log(arr)  
+		
+		// following command will store the whole array as a string in by comma separation
+		let st = arr.toString()
+		console.log(st)
+		
+		// Folloeing command will sort all the elements numerically & alphabetically 
+		arr.sort()
+		console.log(arr)  
+
+
+		// It is rarely used
+		console.log(arr.valueOf());
+
+		// Here as  & arr also are only reference of the same Array.
+		let as = arr.valueOf();
+		console.log(as)
+
+		as[0]="Grapes";
+		console.log(arr)
+		console.log(as)
+
+		// Above is same like as following
+		let pp = arr;
+		console.log(arr)
+		console.log(pp)
+		pp[1] = 999999999999;
+		console.log(arr)
+		console.log(pp)
+
+
+
+		// De-structuring of array is possible as like following
+		// Square matrix is very very important
+		let [a,b,c,d] = arr;
+		console.log( a+" "+b+" "+c+ " "+d)
+
+	</script>
+</body>
+</html>
