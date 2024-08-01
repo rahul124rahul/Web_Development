@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Loops</title> 
+</head>
+<body>
+	<h1>Loops</h1>
+	<h2>While loop</h2>
+	<p>while(condition){ Body of loop }</p>
+	<p>1. Iterations: Number of times the loop runs.</p>
+	<p>2. Used for non-standard conditions.</p>
+	<p>3. Repeating a block of code while a condition is true.</p>
+	<p>4. Remember: Always include an update to avoid infinite loop.</p>
+
+
+	<h2>Do while loop</h2>
+	<p>do{ body of loop } while ( Condition )</p>
+	<p>1. Executes block first, then checks condition.</p>
+	<p>2. Guaranteed to run at least one Iteration.</p>
+	<p>3. Unlike while first iteration is unconditional.</p>
+	<p>4. Don't forget to update condition to avoid infinite loops.</p>
+
+
+	<h2>For loop</h2>
+	<p>for (initialisation, condition, update) { Body of loop }</p>
+	<p>1. Standard loop for running code multiple times.</p>
+	<p>2. Generally preferref for counting iteration.</p>
+
+
+	<h2 style="color: red;">Accumulator Pattern</h2>
+	<p>1. A pattern to accumulate values through looping.</p>
+	
+
+
+	<h2 style="color: red;">Break & continue</h2>
+	<p>1. Break lets you stop a loop early, or break out of loop.</p>
+
+
+
+
+	<script>
+		// While loop
+		let n=1;
+		while(n<=10){
+			console.log(n);
+			n++;
+		}
+
+		// let p = 0;
+		// while(p<1){
+		// 	console.log(p)
+		// 	p = Math.random()*2;
+		// }
+
+
+		// do-while loop
+
+		// Here if condition is false then also code executes once
+		let nums=0;
+		do{
+			console.log(nums);
+			nums++;
+		}
+		while(nums==10);
+
+
+
+		// For loop
+
+		for(let p=1;p<=10;p++){
+			console.log(p+" happy");
+		}
+		let arr = [12,23.4, 'Rahul', 'Yes No', true]
+		for(i in arr){
+			console.log(arr[i])
+		}
+		// or 
+		for(let p=0;p<arr.length ; p++){
+			console.log("-- "+arr[p])
+		}
+
+
+		// Accumulator
+		let ar = [3,54,64.3,454,223,1]
+		let s=0
+		for(i in ar){
+			s+=ar[i];
+		}
+		console.log("Sum of array : " +s)
+
+		let sq = []
+		for(i in ar){
+			sq.push(ar[i]*ar[i])
+		}
+		console.log(sq)
+
+
+
+		// Break
+		for(let a=1;a<=50;a++){
+			if(a==25 || a==15)continue;
+			console.log(a);
+			if(a==35)break;
+		}
+
+	</script>
+</body>
+</html>

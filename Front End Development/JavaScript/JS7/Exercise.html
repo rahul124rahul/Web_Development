@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Practice Exercise</title>
+</head>
+<body>
+	<h1>Practice Exercise [ Array & Loops ]</h1>
+	
+	<h3>1. Create an array of numbers [5,6]. Add 4 at the beginning and 7 at the end of the array.</h3>
+
+	<h3>2. Create a method to return an element at a particular position in the array.</h3>
+
+	<h3>3. Create an array copy using slice method.</h3>
+
+	<h3>4. Create a while loop that exist after counting 5 prime numbers.</h3>
+
+	<h3>5. modify the above loop to finish using loop.</h3>
+
+	<h3>6. Create a for loop that print number 1 to 10 in reverse order. </h3>
+
+	<h3>7. Using continue only print positive numbers from the given array [1,-6,5,7,-98]</h3>
+
+	<h3>8. Using accumulator pattern concatenate all strings in the given array ['Rahul','is','vary','good','in','coding'].</h3>
+
+
+
+	<script>
+		console.log("Rahul")
+		// 1. Create an array of numbers [5,6]. Add 4 at the beginning and 7 at the end of the array.
+		let arr = [5,6];
+		console.log(arr)
+		arr.unshift(4)
+		console.log(arr)
+		arr.push(7)
+		console.log(arr)
+
+
+		// 2. Create a method to return an element at a particular position in the array.
+		function positionElement(pos,arr){
+			return arr[pos-1];
+		}
+		let arr1=[12,23,34,"RAHUL","SONU","RED"]
+		console.log(arr1)
+		console.log(positionElement(2,arr1))
+		console.log(positionElement(5,arr1))
+		// console.log(arr1)
+
+
+
+		// 3. Create an array copy using slice method.
+		let arr2 = arr1.slice(0,arr1.length);
+		// let arr2 = arr1.slice(0,);   // this is same as above 
+		// let arr2 = arr1.slice();     // this is also applicalble
+		console.log(arr1)
+		console.log(arr2)
+
+
+		// 4. Create a while loop that exits after counting 5 prime numbers.
+		// &
+		// 5. modify the above loop to finish using loop.
+		let c=0;
+		let n=1;
+		// while(c!=5){
+		while(true){
+			console.log("n = "+n);
+			let i;
+			for(i=2;i<n;i++){
+				if(n%i==0)break;
+			}
+			if(i==n){
+				c++;
+				console.log(c+") Prime number is "+n);
+				if(c==5)break;
+			}
+			n++;
+		}
+
+
+		// 6. Create a for loop that print number 1 to 10 in reverse order.
+		for(let j=10;j>0;j--)console.log(`-- ${j}`)
+		for(let i=0;i<10;i++)console.log(10-i)
+
+
+		// 7. Using continue only print positive numbers from the given array [1,-6,5,7,-98]
+		let array = [1,-6,5,7,-98]
+		for(i in array){
+			if(array[i]<=0)continue;
+			console.log(array[i]);
+		}
+
+		// 8. Using accumulator pattern concatenate all strings in the given array ['Rahul','is','vary','good','in','coding']. 
+
+		let ar = ['Rahul','is','vary','good','in','coding.'];
+		let ans='';
+		for(i in ar){
+			ans+=`${ar[i]} `;
+		}
+		console.log(ans);
+
+		console.log(ar.join(" "))
+
+
+	</script>
+
+</body>
+</html>
