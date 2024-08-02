@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Event Listener</title>
+</head>
+<body>
+
+	<h1>Event Listner</h1>
+	<h1 style="color: red;">It's important and still remained.</h1>
+	<h2>1. What is an Event: Occurrences like click, mouse movement, keyboard input (e.g., birthday, functions).</h2>
+	<h2>2. Using querySelector to attach listeners.</h2>
+	<h2>3. Multiple Listeners : You can add more than one.</h2>
+	<h2>4. removeEventListener('event','functionVariable')</h2>
+
+	
+	<button class="mybut">Click Me</button>
+
+
+
+	<script>
+		let butid = document.querySelector('.mybut')
+
+		// Remember the syntax of addEventListener
+		butid.addEventListener('click',event => {
+			console.log(`I'm clicked.`);
+		})
+
+		// We can do like following also
+		let printDate = event => {console.log(new Date())};
+
+		butid.addEventListener('click',printDate)
+
+		// Removing the event listener
+		// Here we must have the reference of the event function which we are passing 
+		butid.removeEventListener('click',printDate);
+
+
+		// 11:45:00
+
+	</script>
+
+</body>
+</html>
