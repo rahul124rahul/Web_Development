@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SetTimeout & setInterval</title>
+</head>
+<body>
+	<h1>SetTimeout & setInterval</h1>
+	
+	<h2>1. Functions for executing code asynchronously after a delay.</h2>
+	<h2>2. setTimeout runs once; setIntervalruns repeatedly</h2>
+	<h2>3. setTimeout:</h2>
+	<h3> - Syntax : setTimeout(function, time)</h3>
+	<h3> - Cancel : clearTimeout(timerID)</h3>
+	<h2>4. setInterval</h2>
+	<h3> - Syntax : setInterval(function, tiem)</h3>
+	<h3> - Cancel : clearInterval(intervalID)</h3>
+
+	<script>
+		// following is the function defination without function keyword and without passing any argument
+		let greet = ()=>console.log("Subaha ho gayi Mamu!!"); 
+
+		// following command will execute after 3 seconds = 3000 milli seconds of call
+		setTimeout(greet,10000);			// Her e we don't have to call the function we have to pass only function name the timeout will automatically call the function after timeout.
+		console.log(new Date)
+
+		let timeId = setTimeout(
+			()=>console.log("Uth be diwane !!!!!!!!!!!") ,
+			1000)
+		
+		// Following command will halt the process of the setTimeout function call immediately.
+		clearTimeout(timeId);
+		console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Alarm with timerId : "+timeId)
+
+
+
+
+		// setInterval
+		let intervalId = setInterval(() => console.log(`Uth ja re !! Time : ${new Date()}`) ,1000);
+
+		setTimeout(()=>clearInterval(intervalId),5000);
+	</script>
+</body>
+</html>
