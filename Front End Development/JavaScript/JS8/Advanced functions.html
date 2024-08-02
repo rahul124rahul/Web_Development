@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+	<title>Advance functions in JS</title>
+	<style>
+		body{
+			background-color: rgb(61, 61, 61);
+			margin: 10px 50px;
+		}
+		h1{
+			color: yellow;
+		}
+		h2{
+			color: rgb(38, 197, 255);
+		}
+	</style>
+</head>
+<body>
+	<h1>Advance Functions in JavaScript</h1>
+
+	<h2>1. Function in JavaScript are first-class citizens; they can be asigned to variables.</h2>
+	<h2>2. Function defined without a name, often assignrd to a variable.</h2>
+	<h2>3. Anonymous functions can be properties in objects.</h2>
+	<h2>4. can be passed as argument to other functions.</h2>
+	<h2>5. Invoke using () after the function name or varirablr.</h2>
+	<h2>6.console.log(myFunction); and typeof myFunction will both indicate it's a function</h2>
+
+
+	<h1>Arrow Functions</h1>
+	
+	<h2>A concise way to write anonymous functions.</h2>
+	<h2>For Single Argument : round brackets optional.</h2>
+	<h2>3. For single Line : Curly brackets and return optional.</h2>
+	<h2>4. Often used when passing functions as argument.</h2>
+
+
+
+	<script>
+		let sum=function(a,b){return a+b};
+
+		let newSum = sum;
+		console.log(sum(4,6))
+		console.log(newSum(4,6))
+
+		console.log(sum(23,sum(12,-12)));
+		 
+		let sum3 = function(a,b,c,sum){
+			let s1=sum(a,b);
+			return sum(s1,c);
+		}
+		console.log(sum3(3,4,5,newSum));
+
+		console.log(sum)
+		console.log(sum3)
+		console.log(typeof sum)
+		console.log(typeof sum3)
+
+		// Arrow Functions
+		let sum1 = (n1,n2) =>{
+			return n1+n2;
+		}
+
+		// Following function is applicable by using arrow function
+		let sum2 = (n1,n2) => n1+n2;
+
+		// for single argument round bracket is also optional...
+		let square  = no => no*no
+
+		console.log(sum1(23,32));
+		console.log(sum2(2,32));
+		console.log(square(22))
+	</script>
+</body>
+</html>
