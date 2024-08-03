@@ -1,0 +1,85 @@
+<!-- 3:45:00 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator by RAHUL</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+
+    <div id="calculator">
+      <input type="text" id="display"><br>
+
+      <div class="buttons">
+          <button class="digits" onclick="
+            d=d+'1';
+            document.querySelector('#display').value=d;">1</button>
+          <button class="digits" onclick="
+          d=d+'2';
+          document.querySelector('#display').value=d;">2</button>
+          <button class="digits" onclick="
+          d=d+'3';
+          document.querySelector('#display').value=d;">3</button>
+          <button class="digits" style="background-color: rgb(252, 19, 19); color: white;font-size: large;"  onclick="
+          d='';
+          document.querySelector('#display').value=d;">C</button><br>
+    
+          <button class="digits" onclick="
+          d=d+'4';
+          document.querySelector('#display').value=d;">4</button>
+          <button class="digits" onclick="
+          d=d+'5';
+          document.querySelector('#display').value=d;">5</button>
+          <button class="digits" onclick="
+          d=d+'6';
+          document.querySelector('#display').value=d;">6</button>
+          <button class="digits" onclick="
+          d=d+'+';
+          document.querySelector('#display').value=d;">+</button><br>
+    
+          <button class="digits" onclick="
+          d=d+'7';
+          document.querySelector('#display').value=d;">7</button>
+          <button class="digits" onclick="
+          d=d+'8';
+          document.querySelector('#display').value=d;">8</button>
+          <button class="digits" onclick="
+          d=d+'9';
+          document.querySelector('#display').value=d;">9</button><br>
+          <button class="digits" onclick="
+          d=d+'-';
+          document.querySelector('#display').value=d;">-</button>
+    
+          <button class="digits" onclick="
+          d=d+'.';
+          document.querySelector('#display').value=d;">.</button>
+          <button class="digits" onclick="
+          d=d+'0';
+          document.querySelector('#display').value=d;">0</button>
+          <button class="digits" onclick="
+          d=d+'/';
+          document.querySelector('#display').value=d;">/</button><br>
+          <button class="digits" onclick="
+          d=d+'*';
+          document.querySelector('#display').value=d;">*</button><br>
+
+          <button class="digits" style="background-color: rgb(51, 255, 105); font-size: large;" onclick="
+          let res = eval(d)
+          d=String(res)
+          document.querySelector('#display').value=res">=</button>
+      </div>  
+
+    
+    </div>
+    
+
+
+
+    <script>
+      let d = '';
+      document.querySelector('#display').value=d;
+    </script>
+  </body>
+</html>
