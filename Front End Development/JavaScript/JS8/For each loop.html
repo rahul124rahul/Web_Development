@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>For Each loop</title>
+</head>
+<style>
+	body{
+		background-color: aqua;
+		border: 3px solid black;
+		padding: 10px 30px;
+	}
+	h1{
+		color: rgb(4, 29, 255);
+		font-family:Arial, Helvetica, sans-serif;
+		margin: 50px 250px;
+	}
+</style>
+<body>
+	<!-- 11:47:00 -->
+
+	<h1>For Each loop</h1>
+	<h2>1. A Method for array iteration, often preferred for readability.</h2>
+	<h2>2. Parameters: One for items, Optional for index.</h2>
+	<h2>3. Using return is similar to continue in traditional loops.</h2>
+	<h2>4. Not straightforward to break out of a forEach loop.</h2>
+	<h2>5. When you need to perform action on each array element and don't need to break array.</h2>
+	 
+
+	<h1>Array Methods</h1>
+	<h2>1. Filter Method: </h2>
+	<h3> # Syntax : array.filter((value,index) => return true/false)</h3>
+	<h3> # Use : Filters elements based on condition.</h3>
+
+	<h2>2. map Method: </h2>
+	<h3> # Syntax: array.map((value) => return newValue)</h3>
+	<h3> # Use: Transform each element.</h3>
+
+
+	<script>
+		let arr = [1,2,3,4,"Rahul","Priyanka","Sonu","Piya"];
+
+		// Following is annonyms function
+		arr.forEach(element => {
+			console.log(element);
+		});
+
+		arr.forEach(function(ele){
+			console.log("-"+ele);
+		})
+
+
+		// Using forEach loop is not too suitable in following case.....
+		function search(arr,ele){
+			arr.forEach( function(item){
+				if(ele==item){
+					console.log("Element found in array");
+				}
+			}
+			)
+		}
+		search(arr,"Rahul")
+
+
+
+		// Array Methods
+		
+		// Filter method
+		let arr2 = [1,2,3,4,5,6,7,8,9];
+
+		let odd = arr2.filter((num,index)=>{
+			if(num%2==1)return true;
+			return false;
+		})
+		console.log(odd);
+
+		// followig is same as above but as in short form
+		let even = arr2.filter(
+			(num) => num%2==0 )
+
+		console.log(even)
+
+
+
+		// Map Method
+		let arr3 = [1,2,3,4,5,6,7];
+		let squers = arr3.map((n)=>n*n);
+		console.log(squers);
+	</script>
+</body>
+</html>
