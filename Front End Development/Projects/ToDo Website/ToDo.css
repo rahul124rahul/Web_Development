@@ -1,0 +1,38 @@
+body{
+	font-family: Arial;
+}
+
+#mh{
+	text-align: center;
+}
+
+.table_to_do, .main{
+	display: grid;
+	grid-template-columns: 200px 150px 100px;
+	column-gap: 10px;
+	row-gap: 10px;
+	margin-top: 10px;
+}
+
+
+#input, #date{
+	font-size: 15px;
+	padding: 10px 5px;
+}
+
+#add{
+	background-color: rgb(54, 188, 49);
+	color: white;
+	border: none;
+	border-radius: 10px;
+	padding: 10px 10px;
+	font-size: larger;
+}
+.delete{
+	background-color: red;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	padding: 10px 10px;
+	font-size: larger;
+}
