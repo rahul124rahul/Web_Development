@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOM CSS</title>
+</head>
+<body>
+
+	<div id="fdiv" style="
+		padding: 3rem;
+		background-color: cyan ;">
+		First div
+		<p id="fpara" class="r p mv" style="
+		padding: 1rem;
+		background-color: red ;
+		color: white;">
+			First ParaGraph
+		</p>
+		<div id="sdiv"
+		style="
+		padding: 1rem;
+		background-color: yellow ;">
+			Second div
+			<p id="spara"
+			style="
+		padding: 1rem;
+		background-color: orange ;">Second Para</p>
+		</div>
+	</div>
+
+
+
+	<div class="Theory">
+		<h1>CSS DOM Manipulation by using JavaScript </h1>
+		<p>let p = document.querySelector()</p>
+		<ul>
+			<li>p.style.stylename = "---"</li>
+			<li>p.style.cssText</li>
+			<li>p.style.cssText = "---"</li>
+			<li>p.setAttribute(  ,  )</li>
+			<p>setAttribute will set property:value to the element p if prperty is already exist then only compulsary whole value is updated by new one.</p>
+			<li>p.className</li>
+			<li>p.classList</li>
+			<li>p.classList.remove()</li>
+			<li>p.classList.toggel()</li>
+		</ul>
+	</div>
+
+	<script src="DOM_3.js"></script>
+</body>
+</html>
